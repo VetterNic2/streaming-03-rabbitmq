@@ -1,5 +1,8 @@
 # streaming-03-rabbitmq
 
+![Alt text](Vetter_screenshot.png "Rabbit Verification")
+
+
 > Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary.
 
 This project requires some free code - beyond that available in the Python Standard Library. To avoid messing up our local default Python installation, and any other Python projects we may have, we  create a local virtual environment to install and use these libraries.
