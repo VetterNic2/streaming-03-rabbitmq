@@ -1,4 +1,4 @@
-# streaming-03-rabbitmq
+# Nic Vetter Module 3 Project! - streaming-03-rabbitmq
 
 ![Alt text](Vetter_screenshot.png "Rabbit Verification")
 
@@ -15,7 +15,7 @@ There are other options, but this is simplest and most common.
 We create the environment as a subfolder of this repo named .venv to keep it away from our project code. 
 
 
-## Prerequisites
+## Prerequisites - Confirmed NV
 
 1. Git
 1. Python 3.7+ (3.11+ preferred)
@@ -23,13 +23,13 @@ We create the environment as a subfolder of this repo named .venv to keep it awa
 1. VS Code Extension: Python (by Microsoft)
 1. RabbitMQ Server installed and running locally
 
-## Before You Begin
+## Before You Begin - Confirmed NV
 
 1. Fork this starter repo into your GitHub account.
 1. Clone your repo down to your machine.
 1. Explore your new project repo in VS Code on your local machine.
 
-## Task 1. Create a Python Virtual Environment
+## Task 1. Create a Python Virtual Environment - Confirmed NV
 
 We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects.
 
@@ -43,7 +43,7 @@ python -m venv .venv
 Verify you get a new .venv directory in your project. 
 We use .venv as the name to keep it away from our project files. 
 
-## Task 2. Activate the Virtual Environment
+## Task 2. Activate the Virtual Environment - Confirmed NV
 
 In the same VS Code terminal window, activate the virtual environment.
 
@@ -52,7 +52,7 @@ In the same VS Code terminal window, activate the virtual environment.
 
 Verify you see the virtual environment name (.venv) in your terminal prompt.
 
-## Task 3. Install Dependencies into the Virtual Environment
+## Task 3. Install Dependencies into the Virtual Environment - Confirmed NV
 
 To work with RabbitMQ, we need to install the pika library.
 A library is a collection of code that we can use in our own code.
@@ -65,7 +65,10 @@ Make sure you can see the .venv name in your terminal prompt before running this
 
 `python -m pip install -r requirements.txt`
 
-## Task 4. Verify Setup
+## Task 4. Verify Setup - Confirmed NV
+
+## Everything verified correctly except for the aboutrabbit.py setup. However, it was running correctly on my machine
+## I noticed some other students had this issue and I wonder if it is due to file path. My RabbitMQ server is in my program files. 
 
 In your VS Code terminal window, run the following commands to help verify your setup.
 These util files MAY be helpful to ensure you're setup correctly. 
@@ -82,7 +85,7 @@ pip list
 ![verifying setup](./images/verify-setup.png)
 
 
-## Task 5. Read
+## Task 5. Read  - Confirmed NV
 
 1. Read the [RabbitMQ Hello World! tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
 1. Read the code and comments in our 2 project files: emit_message.py and listen_for_messages.py
@@ -90,7 +93,7 @@ pip list
 Don't worry if it doesn't all make sense the first time. 
 Approach it like a puzzle and see what you can figure out. 
 
-## Task 6. Execute the Producer/Sender
+## Task 6. Execute the Producer/Sender - Confirmed NV - see commits
 
 1. Read v1_emit_message.py (and the tutorial)
 1. Run the file. 
@@ -98,7 +101,7 @@ Approach it like a puzzle and see what you can figure out.
 It will run, emit a message to the named RabbitMQ queue, and finish.
 We can execute additional commands in the terminal as soon as it finishes. 
 
-## Task 7. Execute the Consumer/Listener
+## Task 7. Execute the Consumer/Listener - Confirmed NV - see commits
 
 1. Read v1_listen_for_messages.py (and the tutorial)
 1. Run the file.
@@ -107,7 +110,7 @@ You'll need to fix an error in the program to get it to run.
 Once it runs successfully, will it terminate on its own? How do you know? 
 As long as the process is running, we cannot use this terminal for other commands. 
 
-## Task 8. Open a New Terminal / Emit More Messages
+## Task 8. Open a New Terminal / Emit More Messages - Confirmed NV - see commits
 
 1. Open a new terminal window.
 1. Use this new window to run emit_message.py again.
@@ -123,7 +126,7 @@ Sending the same message each time is kind of boring. This time:
 Repeat this process several times - emit at least 4 different messages.
 Don't worry - it's just code. We can always revert back (try the 'undo' command in VS Code) to a version that works. You can't hurt anything.
 
-## Task 9. Save Time & Effort: Don't Repeat Yourself
+## Task 9. Save Time & Effort: Don't Repeat Yourself - Confirmed NV - see commits - variable = "message"
 
 Did you notice you had to change the message in TWO places?
 
@@ -137,7 +140,7 @@ Now, to send a new message, you'll only make ONE change.
 Updating and improving code is called 'refactoring'. 
 Use your skills to keep coding enjoyable. 
 
-## Version 2
+## Version 2 - Confirmed NV - see commits
 
 Now look at the second version of each file.
 These include more graceful error handling,
